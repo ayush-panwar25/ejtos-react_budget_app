@@ -22,7 +22,7 @@ const ExpenseItem = (props) => {
             type: 'ADD_EXPENSE',
             payload: expense
         });
-    }
+    };
         const decreaseAllocation = (name) => {
         const expense = {
             name: name,
@@ -30,11 +30,11 @@ const ExpenseItem = (props) => {
         };
 
         dispatch({
-            type: 'SUB_EXPENSE',
+            type: 'SUBTRACT_EXPENSE',
             payload: expense
         });
 
-    }
+    };
 
     return (
         <tr>
